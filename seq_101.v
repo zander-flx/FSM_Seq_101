@@ -2,10 +2,16 @@
 				SEQUENCE 101
 ======================================
 DESCRIPTION:
-
+	THIS MOORE FSM DETECTS THE
+	NON-OVERLAPPING SEQUENCE 1-1,
+	ASSUMING THE INPUT STREAM ARRIVES
+	LSB-FIRST.
+	
 DESIGN ENGINEER:
+	FELIXANDER B. DOLOSO
 
 DATE:
+MARCH 31, 2026
 
 
 ------------------------------------*/
