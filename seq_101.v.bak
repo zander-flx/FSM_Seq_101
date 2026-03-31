@@ -1,0 +1,50 @@
+/*====================================
+				SEQUENCE 101
+======================================
+DESCRIPTION:
+
+DESIGN ENGINEER:
+
+DATE:
+
+
+------------------------------------*/
+module seq_101(out, clk, rst_n, in);
+	//ports
+	input 		in;
+	input 		rst_n;
+	input 		clk;
+	output reg	out;
+	
+	//state
+	parameter [1:0]S0 = 2'b00;
+	parameter [1:0]S1 = 2'b01;
+	parameter [1:0]S2 = 2'b10;
+	parameter [1:0]S3 = 2'b11;
+	reg [1:0]pre; //present state
+	reg [1:0]nxt; //next state
+	
+	//input block
+	always @(in,pre) begin
+		case(pre)
+		S0:nxt = in? S1:S0;
+		S1:nxt = in? S1:S2;
+		S2:nxt = in? S3:S0;
+		S3:nxt = in? S1:S0;
+		default:nxt = S0;
+	end //end of always @(in,pre)
+	
+	//sequential block
+	always @(posedge clk, negedge rst_n) begin
+		if(!rst_n) pre = S0;
+		else pre = nxt;
+	end //end of always@(posedge clk, negedge rst_n)
+	//output block
+	always@(pre)begin
+		case (pre)
+			S0: out = 0;
+			S1: out = 1;
+			default: out = 0;
+		endcase
+	 end
+endmodule
