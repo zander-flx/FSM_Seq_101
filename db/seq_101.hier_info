@@ -1,7 +1,7 @@
 |seq_101
-out << out.DB_MAX_OUTPUT_PORT_TYPE
-state[0] << state.DB_MAX_OUTPUT_PORT_TYPE
-state[1] << state.DB_MAX_OUTPUT_PORT_TYPE
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= state.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state.DB_MAX_OUTPUT_PORT_TYPE
 clk => pre~1.DATAIN
 rst_n => pre~3.DATAIN
 in => nxt.S3.DATAB

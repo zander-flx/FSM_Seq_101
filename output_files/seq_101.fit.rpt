@@ -1,5 +1,5 @@
 Fitter report for seq_101
-Tue Mar 31 11:42:19 2026
+Tue Mar 31 11:59:21 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -66,7 +66,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Mar 31 11:42:19 2026           ;
+; Fitter Status                      ; Successful - Tue Mar 31 11:59:21 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; seq_101                                         ;
 ; Top-level Entity Name              ; seq_101                                         ;
@@ -153,7 +153,7 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -1485,9 +1485,9 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk~input (placed in PIN J1 (CLK1, DIFFCLK_0n)) File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/seq_101.v Line: 16
+Info (176353): Automatically promoted node clk~input (placed in PIN J1 (CLK1, DIFFCLK_0n)) File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/seq_101.v Line: 22
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node rst_n~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/seq_101.v Line: 15
+Info (176353): Automatically promoted node rst_n~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/seq_101.v Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1517,19 +1517,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y24 to location X10_Y36
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file C:/Users/USER/Desktop/GitHub/FSM_Seq_101/output_files/seq_101.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 6845 megabytes
-    Info: Processing ended: Tue Mar 31 11:42:19 2026
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Tue Mar 31 11:59:21 2026
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +----------------------------+

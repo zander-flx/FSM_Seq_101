@@ -1,5 +1,5 @@
 Analysis & Synthesis report for seq_101
-Tue Mar 31 11:42:09 2026
+Tue Mar 31 11:59:07 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -46,7 +46,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 31 11:42:09 2026           ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 31 11:59:07 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; seq_101                                         ;
 ; Top-level Entity Name              ; seq_101                                         ;
@@ -302,14 +302,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Tue Mar 31 11:42:03 2026
+    Info: Processing started: Tue Mar 31 11:58:49 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off seq_101 -c seq_101
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
-    Info (12023): Found entity 1: clk_div File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/clk_div.v Line: 16
+    Info (12023): Found entity 1: clk_div File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/clk_div.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file seq_101.v
-    Info (12023): Found entity 1: seq_101 File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/seq_101.v Line: 12
+    Info (12023): Found entity 1: seq_101 File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/seq_101.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
     Info (12023): Found entity 1: testbench File: C:/Users/USER/Desktop/GitHub/FSM_Seq_101/testbench.v Line: 2
 Info (12127): Elaborating entity "seq_101" for the top level hierarchy
@@ -323,8 +323,8 @@ Info (21057): Implemented 12 device resources after synthesis - the final resour
     Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Tue Mar 31 11:42:09 2026
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Tue Mar 31 11:59:07 2026
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:16
 
 
