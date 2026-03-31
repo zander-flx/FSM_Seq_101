@@ -15,13 +15,14 @@ MARCH 31, 2026
 
 
 ------------------------------------*/
-module seq_101(out, state, clk, rst_n, in);
+module seq_101(out, clk_led, state, clk_50, rst_n, in);
 	//ports
 	input 				in;
 	input 				rst_n;
-	input 				clk;
+	input 				clk_50;
 	output reg			out;
 	output reg	[1:0]	state;
+	output 	 			clk_led;
 	
 	
 	//state
@@ -31,7 +32,8 @@ module seq_101(out, state, clk, rst_n, in);
 	parameter [1:0]S3 = 2'b11;
 	reg [1:0]pre; //present state
 	reg [1:0]nxt; //next state
-	/*
+	wire clk;
+	
 	//1Hz Clock
 		clk_div #(.TICKS_500MS(25_000_000)) div(
 			.clk_out(clk),
@@ -40,7 +42,7 @@ module seq_101(out, state, clk, rst_n, in);
 		); 
 	//this convert the 50MHz clock to 1Hz Clock
  
-	*/
+
 	//input block
 	always @(in,pre) begin
 		case(pre)

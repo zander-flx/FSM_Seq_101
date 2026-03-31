@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk_led",
+					"strict" : false
+				},
+				{
 					"name" : "state[0]",
 					"strict" : false
 				},
@@ -20,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "rst_n",
 					"strict" : false
 				},
 				{
-					"name" : "rst_n",
+					"name" : "clk_50",
 					"strict" : false
 				}
 			]
