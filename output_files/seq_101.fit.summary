@@ -1,12 +1,12 @@
-Fitter Status : Successful - Tue Mar 31 21:44:07 2026
+Fitter Status : Successful - Sun Apr  5 20:56:01 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : seq_101
 Top-level Entity Name : seq_101
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 55 / 114,480 ( < 1 % )
-    Total combinational functions : 54 / 114,480 ( < 1 % )
+Total logic elements : 53 / 114,480 ( < 1 % )
+    Total combinational functions : 52 / 114,480 ( < 1 % )
     Dedicated logic registers : 32 / 114,480 ( < 1 % )
 Total registers : 32
 Total pins : 7 / 529 ( 1 % )

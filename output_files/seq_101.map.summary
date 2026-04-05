@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Mar 31 21:43:40 2026
+Analysis & Synthesis Status : Successful - Sun Apr  5 20:55:35 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : seq_101
 Top-level Entity Name : seq_101
 Family : Cyclone IV E
-Total logic elements : 54
-    Total combinational functions : 54
+Total logic elements : 52
+    Total combinational functions : 52
     Dedicated logic registers : 32
 Total registers : 32
 Total pins : 7

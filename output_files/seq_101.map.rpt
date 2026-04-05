@@ -1,5 +1,5 @@
 Analysis & Synthesis report for seq_101
-Tue Mar 31 21:43:40 2026
+Sun Apr  5 20:55:35 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -47,13 +47,13 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 31 21:43:40 2026           ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr  5 20:55:35 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; seq_101                                         ;
 ; Top-level Entity Name              ; seq_101                                         ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 54                                              ;
-;     Total combinational functions  ; 54                                              ;
+; Total logic elements               ; 52                                              ;
+;     Total combinational functions  ; 52                                              ;
 ;     Dedicated logic registers      ; 32                                              ;
 ; Total registers                    ; 32                                              ;
 ; Total pins                         ; 7                                               ;
@@ -177,36 +177,36 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 54           ;
-;                                             ;              ;
-; Total combinational functions               ; 54           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 21           ;
-;     -- 3 input functions                    ; 0            ;
-;     -- <=2 input functions                  ; 33           ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 28           ;
-;     -- arithmetic mode                      ; 26           ;
-;                                             ;              ;
-; Total registers                             ; 32           ;
-;     -- Dedicated logic registers            ; 32           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 7            ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; clk_50~input ;
-; Maximum fan-out                             ; 28           ;
-; Total fan-out                               ; 228          ;
-; Average fan-out                             ; 2.28         ;
-+---------------------------------------------+--------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 52            ;
+;                                             ;               ;
+; Total combinational functions               ; 52            ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 19            ;
+;     -- 3 input functions                    ; 0             ;
+;     -- <=2 input functions                  ; 33            ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 26            ;
+;     -- arithmetic mode                      ; 26            ;
+;                                             ;               ;
+; Total registers                             ; 32            ;
+;     -- Dedicated logic registers            ; 32            ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 7             ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; clk_150~input ;
+; Maximum fan-out                             ; 28            ;
+; Total fan-out                               ; 220           ;
+; Average fan-out                             ; 2.24          ;
++---------------------------------------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -214,8 +214,8 @@ on the Quartus Prime software download page.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
-; |seq_101                   ; 54 (6)              ; 32 (4)                    ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |seq_101             ; seq_101     ; work         ;
-;    |clk_div:div|           ; 48 (48)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seq_101|clk_div:div ; clk_div     ; work         ;
+; |seq_101                   ; 52 (6)              ; 32 (4)                    ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |seq_101             ; seq_101     ; work         ;
+;    |clk_div:div|           ; 46 (46)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seq_101|clk_div:div ; clk_div     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -278,7 +278,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------+------------------------------+
 ; Parameter Name ; Value    ; Type                         ;
 +----------------+----------+------------------------------+
-; TICKS_500MS    ; 25000000 ; Signed Integer               ;
+; TICKS_500MS    ; 75000000 ; Signed Integer               ;
 +----------------+----------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -292,16 +292,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 32                          ;
 ;     CLR               ; 4                           ;
 ;     plain             ; 28                          ;
-; cycloneiii_lcell_comb ; 56                          ;
+; cycloneiii_lcell_comb ; 54                          ;
 ;     arith             ; 26                          ;
 ;         2 data inputs ; 26                          ;
-;     normal            ; 30                          ;
+;     normal            ; 28                          ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 6                           ;
-;         4 data inputs ; 21                          ;
+;         4 data inputs ; 19                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.40                        ;
-; Average LUT depth     ; 3.11                        ;
+; Max LUT depth         ; 4.60                        ;
+; Average LUT depth     ; 3.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -310,7 +310,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -320,7 +320,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Tue Mar 31 21:43:25 2026
+    Info: Processing started: Sun Apr  5 20:55:18 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off seq_101 -c seq_101
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -334,14 +334,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 54 logic cells
+    Info (21061): Implemented 52 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Tue Mar 31 21:43:40 2026
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Processing ended: Sun Apr  5 20:55:35 2026
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:34
 
 
