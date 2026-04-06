@@ -41,7 +41,7 @@ module seq_101(out, clk_led, state, clk_150, rst_n, in);
 			.clk_led(clk_led),
 			.clk_in(clk_150)
 		); 
-	//this convert the 50MHz clock to 1Hz Clock
+	//this convert the 50MHz clock to 3Hz Clock
  
 
 	//input block
