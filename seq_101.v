@@ -36,7 +36,7 @@ module seq_101(out, clk_led, state, clk_150, rst_n, in);
 	wire clk;
 	
 	//1Hz Clock
-		clk_div #(.TICKS_500MS(75_000_000)) div(
+		clk_div div(
 			.clk_out(clk),
 			.clk_led(clk_led),
 			.clk_in(clk_150)
