@@ -6,7 +6,8 @@ Description:
  it to produce 1Hz clock output.
 
 Design Engineer:
- 
+ Felixander B. Doloso
+ Seth Andrei V. Gedalanga
 
 Date:
 Feb. 18, 2026

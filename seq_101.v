@@ -3,25 +3,27 @@
 ======================================
 DESCRIPTION:
 	THIS MOORE FSM DETECTS THE
-	NON-OVERLAPPING SEQUENCE 1-1,
+	NON-OVERLAPPING SEQUENCE 101,
 	ASSUMING THE INPUT STREAM ARRIVES
 	LSB-FIRST.
 	
 DESIGN ENGINEER:
 	FELIXANDER B. DOLOSO
+	SETH ANDREI V. GEDALANGA
 
 DATE:
-MARCH 31, 2026
+	MARCH 31, 2026
 
 
 ------------------------------------*/
-module seq_101(out, state, clk, rst_n, in);
+module seq_101(out, clk_led, state, clk_150, rst_n, in);
 	//ports
 	input 				in;
 	input 				rst_n;
-	input 				clk;
+	input 				clk_150;
 	output reg			out;
 	output reg	[1:0]	state;
+	output 	 			clk_led;
 	
 	
 	//state
@@ -31,16 +33,17 @@ module seq_101(out, state, clk, rst_n, in);
 	parameter [1:0]S3 = 2'b11;
 	reg [1:0]pre; //present state
 	reg [1:0]nxt; //next state
-	/*
+	wire clk;
+	
 	//1Hz Clock
-		clk_div #(.TICKS_500MS(25_000_000)) div(
+		clk_div #(.TICKS_500MS(75_000_000)) div(
 			.clk_out(clk),
 			.clk_led(clk_led),
-			.clk_in(clk_50)
+			.clk_in(clk_150)
 		); 
-	//this convert the 50MHz clock to 1Hz Clock
+	//this convert the 50MHz clock to 3Hz Clock
  
-	*/
+
 	//input block
 	always @(in,pre) begin
 		case(pre)
